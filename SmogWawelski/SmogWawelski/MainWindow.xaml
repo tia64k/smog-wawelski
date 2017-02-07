@@ -5,13 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmogWawelski"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
+        Title="Odczyt" Height="400" Width="600">
 
+    
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="433*"/>
-            <ColumnDefinition Width="161*"/>
-        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
@@ -20,7 +17,7 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="590" Grid.ColumnSpan="2">
+        <Menu x:Name="menu" Height="19" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="0,0,-0.4,0">
             <MenuItem Header="Opcje">
                 <MenuItem Header="Ustawienia"/>
                 <MenuItem Header="Powiadomienia"/>
@@ -60,9 +57,9 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="322,74,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="No" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="322,144,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="No" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="322,214,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="No" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="322,74,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="None" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="322,144,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="None" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock_Copy1" Margin="322,214,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="None" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2" HorizontalAlignment="Left" FlowDirection="RightToLeft"/>
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="322,284,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="No" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
         <Ellipse HorizontalAlignment="Left" Height="142" Margin="65,74,0,0" StrokeThickness="10.3" VerticalAlignment="Top" Width="142">
             <Ellipse.Stroke>
