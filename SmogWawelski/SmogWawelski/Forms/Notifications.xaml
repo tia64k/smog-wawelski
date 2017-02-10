@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmogWawelski.Forms"
         mc:Ignorable="d"
-        Title="Notifications" Height="300" Width="300">
+        Title="Notifications" Height="400" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="/SmogWawelski;component/Images/wawel.png"/>
+    </Window.Background>
     <Grid>
         
     </Grid>

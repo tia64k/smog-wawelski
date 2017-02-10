@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:SmogWawelski.Forms"
         mc:Ignorable="d"
         Title="AboutUs" Height="400" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="/SmogWawelski;component/Images/wawel.png"/>
+    </Window.Background>
     <Grid>
         
     </Grid>

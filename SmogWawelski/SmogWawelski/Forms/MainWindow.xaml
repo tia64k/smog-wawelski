@@ -7,14 +7,10 @@
         mc:Ignorable="d"
         Title="Odczyt" Height="400" Width="600">
 
-    
+
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="White" Offset="1"/>
-                <GradientStop Color="#FF9A9A9A" Offset="0.01"/>
-            </LinearGradientBrush>
+            <ImageBrush ImageSource="/SmogWawelski;component/Images/wawel.png"/>
         </Grid.Background>
 
         <Menu x:Name="menu" Height="19" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="0,0,-0.4,0">
@@ -25,35 +21,35 @@
             <MenuItem Header="Odśwież" Click="Refresh"/>
             <MenuItem Header="O nas" Click="AboutUs"/>
         </Menu>
-        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,60,0,0" Stroke="#FF000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,60,0,0" Stroke="#66000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF66EBD6" Offset="0"/>
-                    <GradientStop Color="#FF4444D4" Offset="1"/>
+                    <GradientStop Color="#664444D4" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,130,0,0" Stroke="#FF000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,130,0,0" Stroke="#66000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF66EBD6" Offset="0"/>
-                    <GradientStop Color="#FF4444D4" Offset="1"/>
+                    <GradientStop Color="#664444D4" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,200,0,0" Stroke="#FF000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,200,0,0" Stroke="#66000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF66EBD6" Offset="0"/>
-                    <GradientStop Color="#FF4444D4" Offset="1"/>
+                    <GradientStop Color="#664444D4" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,270,0,0" Stroke="#FF000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="322,270,0,0" Stroke="#66000A79" VerticalAlignment="Top" Width="226" RadiusX="11" RadiusY="9" StrokeThickness="5" Grid.ColumnSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF66EBD6" Offset="0"/>
-                    <GradientStop Color="#FF4444D4" Offset="1"/>
+                    <GradientStop Color="#664444D4" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
@@ -61,22 +57,22 @@
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="322,144,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="None" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="textBlock_Copy1" Margin="322,214,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="None" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2" HorizontalAlignment="Left" FlowDirection="RightToLeft"/>
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="322,284,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="221" Height="18" Cursor="No" Foreground="#FFE02727" FontWeight="Bold" TextAlignment="Center" FontFamily="Lucida Calligraphy" FontSize="14.667" Grid.ColumnSpan="2"/>
-        <Ellipse HorizontalAlignment="Left" Height="142" Margin="65,74,0,0" StrokeThickness="10.3" VerticalAlignment="Top" Width="142">
+        <Ellipse HorizontalAlignment="Left" Height="142" Margin="67,189,0,0" StrokeThickness="10.3" VerticalAlignment="Top" Width="142">
             <Ellipse.Stroke>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFF40D0D" Offset="0"/>
-                    <GradientStop Color="#FF00DC2A" Offset="1"/>
+                    <GradientStop Color="#7F00DC2A" Offset="1"/>
                 </LinearGradientBrush>
             </Ellipse.Stroke>
             <Ellipse.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF930000" Offset="0"/>
-                    <GradientStop Color="#FF0F461F" Offset="0.833"/>
+                    <GradientStop Color="#660F461F" Offset="0.833"/>
                 </LinearGradientBrush>
             </Ellipse.Fill>
         </Ellipse>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="96,130,0,0" TextWrapping="Wrap" Text="90%" VerticalAlignment="Top" Height="30" Width="80" TextAlignment="Center" FontSize="21.333" FontWeight="Bold" FontFamily="Open Sans" Foreground="#FF82C200"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="59,49,0,0" TextWrapping="Wrap" Text="Normy przekroczone o:" VerticalAlignment="Top" Width="158" Height="20" FontFamily="Sitka Text" Foreground="#FFA90736" FontSize="13.333" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="98,245,0,0" TextWrapping="Wrap" Text="90%" VerticalAlignment="Top" Height="30" Width="80" TextAlignment="Center" FontSize="21.333" FontWeight="Bold" FontFamily="Open Sans" Foreground="#FF82C200"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,164,0,0" TextWrapping="Wrap" Text="Normy przekroczone o:" VerticalAlignment="Top" Width="158" Height="20" FontFamily="Sitka Text" Foreground="#FFA90736" FontSize="13.333" FontWeight="Bold" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="354,40,0,0" TextWrapping="Wrap" Text="U10:" VerticalAlignment="Top" Width="158" Height="20" FontFamily="Sitka Text" Foreground="#FFA90736" FontSize="13.333" FontWeight="Bold" Grid.ColumnSpan="2" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock2_Copy1" HorizontalAlignment="Left" Margin="354,110,0,0" TextWrapping="Wrap" Text="U20:" VerticalAlignment="Top" Width="158" Height="20" FontFamily="Sitka Text" Foreground="#FFA90736" FontSize="13.333" FontWeight="Bold" Grid.ColumnSpan="2" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock2_Copy2" HorizontalAlignment="Left" Margin="354,180,0,0" TextWrapping="Wrap" Text="U25:" VerticalAlignment="Top" Width="158" Height="20" FontFamily="Sitka Text" Foreground="#FFA90736" FontSize="13.333" FontWeight="Bold" Grid.ColumnSpan="2" TextAlignment="Center"/>
