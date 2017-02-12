@@ -41,6 +41,7 @@ namespace SmogWawelski.Parsers
             get { return apiUrl; }
         }
 
+
         public SensorData GetSensorData(int sensorId)
         {
             SensorData data = new SensorData();
