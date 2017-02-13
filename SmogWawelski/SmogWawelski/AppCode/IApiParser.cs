@@ -12,5 +12,6 @@ namespace SmogWawelski.AppCode
     {
         string ApiUrl { get; }
         SensorData GetSensorData(int sensorId);
+        Dictionary<int, string> GetSensorNames();
     }
 }

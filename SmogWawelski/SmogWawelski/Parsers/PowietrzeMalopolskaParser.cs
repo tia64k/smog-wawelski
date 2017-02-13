@@ -13,6 +13,7 @@ using Newtonsoft.Json.Linq;
 using SmogWawelski.Exceptions;
 using System.ComponentModel;
 using System.Reflection;
+using Util;
 
 namespace SmogWawelski.Parsers
 {
@@ -44,6 +45,10 @@ namespace SmogWawelski.Parsers
 
         public SensorData GetSensorData(int sensorId)
         {
+            if (!InternetConnection.CheckForInternetConnection())
+            {
+                throw new NoInternetConnectionException("Brak dostępu do internetu");
+            }
             SensorData data = new SensorData();
 
             using (WebClient wc = new WebClient())
@@ -73,6 +78,10 @@ namespace SmogWawelski.Parsers
 
         public Dictionary<int, string> GetSensorNames()
         {
+            if (!InternetConnection.CheckForInternetConnection())
+            {
+                throw new NoInternetConnectionException("Brak dostępu do internetu");
+            }
             Dictionary<int, string> sensors = new Dictionary<int, string>();
 
             using (WebClient wc = new WebClient())
