@@ -22,6 +22,8 @@ namespace SmogWawelski.Forms
         public Settings()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            Topmost = true;
         }
     }
 }

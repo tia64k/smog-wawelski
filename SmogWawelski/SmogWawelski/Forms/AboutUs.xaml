@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmogWawelski.Forms"
         mc:Ignorable="d"
-        Title="AboutUs" Height="400" Width="600">
+        Title="AboutUs" Height="400" Width="600" Icon="/SmogWawelski;component/Images/icon.png">
     <Window.Background>
         <ImageBrush ImageSource="/SmogWawelski;component/Images/wawel.png"/>
     </Window.Background>

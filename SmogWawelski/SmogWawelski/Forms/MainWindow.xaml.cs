@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,20 +21,28 @@ namespace SmogWawelski
     /// </summary>
     public partial class MainWindow : Window
     {
+        Timer aTimer;
+        private static int lastHour, smogNorms;
+        private static bool isNotification;
         public MainWindow()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
+            aTimer = new Timer(60000); 
+            lastHour = DateTime.Now.Hour;
+            aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+            aTimer.AutoReset = true;
+            aTimer.Start();
         }
 
         //Refresh
         private void Refresh(object sender, RoutedEventArgs e)
         {
-            int smog;
             string text = textBlock1.Text.Replace("%","");
 
-            smog = Int32.Parse(text);
-            smog++;
-            textBlock1.Text = smog.ToString() + "%";
+            smogNorms = Int32.Parse(text);
+            textBlock1.Text = smogNorms.ToString() + "%";
             
         }
 
@@ -41,6 +50,7 @@ namespace SmogWawelski
         private void AboutUs(object sender, RoutedEventArgs e)
         {
             Forms.AboutUs about = new Forms.AboutUs();
+            about.Owner = this;
             about.Show();
         }
 
@@ -48,14 +58,32 @@ namespace SmogWawelski
         private void Settings(object sender, RoutedEventArgs e)
         {
             Forms.Settings settings = new Forms.Settings();
+            settings.Owner = this;
             settings.Show();
         }
 
         //Notifications
-        private void Notifications(object sender, RoutedEventArgs e)
+        private void Notifications_checked(object sender, RoutedEventArgs e)
         {
-            Forms.Notifications notifications = new Forms.Notifications();
-            notifications.Show();
+            isNotification = true;
+            Forms.NotificationWindow notification = new Forms.NotificationWindow(smogNorms);
+            notification.Show();
+        }
+        private void Notifications_unchecked(object sender, RoutedEventArgs e)
+        {
+            isNotification = false;
+        }
+
+        
+        private static void OnTimedEvent(object source, ElapsedEventArgs e)
+        {
+            if ((lastHour < DateTime.Now.Hour || (lastHour == 23 && DateTime.Now.Hour == 0)) && isNotification == true)
+            {
+                lastHour = DateTime.Now.Hour;
+                Forms.NotificationWindow notification = new Forms.NotificationWindow(smogNorms);
+                notification.Show();
+            }
+
         }
     }
 }

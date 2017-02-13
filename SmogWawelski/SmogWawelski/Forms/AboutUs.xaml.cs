@@ -22,6 +22,15 @@ namespace SmogWawelski.Forms
         public AboutUs()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            Topmost = true;
+            Focusable = true;
+            Focus();
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
